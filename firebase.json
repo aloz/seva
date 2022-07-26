@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/seva",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
