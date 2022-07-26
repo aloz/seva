@@ -1,0 +1,3 @@
+C:\Users\aloz\source\repos\seva\seva\obj\Debug\seva.esproj.AssemblyReference.cache
+C:\Users\aloz\source\repos\seva\seva\obj\Debug\seva.esproj.SuggestedBindingRedirects.cache
+C:\Users\aloz\source\repos\seva\seva\obj\Debug\seva.esproj.CoreCompileInputs.cache

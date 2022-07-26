@@ -1,0 +1,23 @@
+<button mat-stroked-button style="width:100%"
+        class="mat-elevation-z1"
+        [style.background-color]="isPlaying? 'lawngreen' : 'inherit'"
+        (click)="togglePlay()">
+
+  <div class="btn-container">
+
+    <div>
+      <mat-spinner [diameter]="30" mode="determinate" [value]="spValue"></mat-spinner>
+    </div>
+
+    <div *ngIf="isPlaying; then stop else play"></div>
+    <ng-template #play><mat-icon class="btn-play-icon">play_arrow</mat-icon></ng-template>
+    <ng-template #stop><mat-icon class="btn-play-icon">stop_arrow</mat-icon></ng-template>
+
+    <div class="btn-caption">
+      {{ caption }}
+    </div>
+
+  </div>
+
+</button>
+

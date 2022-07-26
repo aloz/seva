@@ -1,0 +1,46 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--app-zindex-toolbar);
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container {
+  min-height: calc(100% - var(--aloz-footer-height));
+  padding: var(--app-gap);
+  padding-top: calc(var(--app-toolbar-height) + var(--app-gap));
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.buttons-container-incard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttn {
+  margin: calc(var(--app-gap) / 2);
+}
+
+.crd {
+  width: 280px;
+  margin: calc(var(--app-gap) / 2);
+}
+
+.buttn.btn {
+  width: 260px;
+}
+
+.buttn.wide {
+  width: 100%
+}
