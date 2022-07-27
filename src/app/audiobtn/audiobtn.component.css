@@ -1,5 +1,6 @@
 .btn {
-    width: 100%;
+  width: 100%;
+  padding: calc(var(--app-gap) / 4);
 }
 
 .btn-container {
@@ -11,8 +12,8 @@
 
 .btn-play-icon {
   position: absolute;
-  top: 5px;
-  left: 18px;
+  top: 9px;
+  left: 7px;
 }
 
 .btn-caption {
