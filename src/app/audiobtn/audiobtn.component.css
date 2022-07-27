@@ -19,4 +19,5 @@
   font-size: x-small;
   flex-grow: 1;
   margin-left: var(--app-gap);
+  text-align: left;
 }
