@@ -1,18 +1,22 @@
-<div id="root-container">
+<div id="splash" [style.display]="isSplashShown ? 'none' : 'flex' ">
+  <div id="splash-content">
+    <img src="/assets/img/splash/splash.png" style="width:400px" />
+  </div>
+</div>
+
+<div id="root-container" [style.display]="isSplashShown ? 'block' : 'none' ">
 
   <mat-toolbar color="primary" class="toolbar mat-elevation-z8">
     <mat-toolbar-row>
       <button mat-icon-button>
         <mat-icon>flutter_dash</mat-icon>
       </button>
-      <span>Сева Восточный</span>
+      <span>Сева Восточный и туберкулез</span>
     </mat-toolbar-row>
   </mat-toolbar>
 
   <div class="content-container">
-
     <app-audiopage></app-audiopage>
-
   </div>
 
 </div>

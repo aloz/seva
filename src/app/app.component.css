@@ -1,3 +1,13 @@
+#splash {
+  display: flex;
+  height: 100%;
+  background-color: black;
+}
+
+#splash-content {
+  margin: auto;
+}
+
 .toolbar {
   position: fixed;
   top: 0;
