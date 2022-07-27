@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AudiobtnComponent } from './audiobtn/audiobtn.component';
+import { AudiopageComponent } from './audiopage/audiopage.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   declarations: [
     AppComponent,
     AudiobtnComponent,
+    AudiopageComponent,
   ],
   imports: [
     BrowserModule,
