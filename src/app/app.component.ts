@@ -10,39 +10,49 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'Сева Восточный и туберкулез';
 
   isSplashShown: boolean = false;
-  // private _splashTimaout: any;
-  private _audio!: HTMLAudioElement;
+  private _splashTimeout: any;
+  //private _audio!: HTMLAudioElement;
 
   ngOnInit(): void {
 
     if (!this.isSplashShown) {
-      console.log('AppComponent', 'ngOnInit');
+      // console.log('AppComponent', 'ngOnInit');
 
-      /*
-      this._splashTimaout = setTimeout(() => {
-        console.log('AppComponent', 'setTimeout');
+      this._splashTimeout = setTimeout(() => {
+        // console.log('AppComponent', 'setTimeout');
         this.isSplashShown = true;
       }, 4000);
-      */
 
+      // Unable to play audio in Chrome on first start. PWA only
+
+/*
       this._audio = new Audio('/assets/mp3/19.tuberkulyoz.mp3');
       this._audio.autoplay = false;
       this._audio.loop = false;
       this._audio.volume = 1;
+      this._audio.muted = true;
 
       this._audio.onended = () => {
         this.isSplashShown = true;
       };
 
-      this._audio.play();
+      document.body.appendChild(this._audio);
+
+      this._splashTimeout = setTimeout(() => {
+        // this._audio.play();
+      }, 4000);
+
+*/
     }
   }
 
   ngOnDestroy(): void {
-    console.log('AppComponent', 'ngOnDestroy');
-    // clearTimeout(this._splashTimaout);
+    // console.log('AppComponent', 'ngOnDestroy');
 
-    this._audio.remove();
+    if (this.isSplashShown) {
+      clearTimeout(this._splashTimeout);
+      // this._audio.remove();
+    }
   }
 
 }
