@@ -1,11 +1,52 @@
 #splash {
   display: flex;
   height: 100%;
-  background-color: black;
+  background-color: white;
 }
 
 #splash-content {
   margin: auto;
+  animation-name: splash-animation;
+  animation-duration: 4s;
+}
+
+.splash-polaroid-frame {
+  background-color: white;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+
+.splash-polaroid-image {
+  /*
+  width: 80vw;
+  height: 60vh;
+        */
+}
+
+.splash-polaroid-bottom {
+  display: flex;
+  height: 76px;
+}
+
+.splash-polaroid-bottom-text {
+  margin: auto;
+  font-family: 'Caveat', cursive;
+  line-height: 32px;
+  text-align: center;
+  font-size: x-large;
+}
+
+@keyframes splash-animation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .toolbar {

@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this._splashTimeout = setTimeout(() => {
         // console.log('AppComponent', 'setTimeout');
         this.isSplashShown = true;
-      }, 4000);
+      }, 6000);
 
       // Unable to play audio in Chrome on first start. PWA only
 
