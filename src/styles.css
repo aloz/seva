@@ -14,9 +14,14 @@ body {
 :root {
   --app-gap: 16px;
   --app-toolbar-height: 64px;
-  --app-zindex-toolbar: 65535;
+  /* 1000 is the last to show MatDialog correctly */
+  --app-zindex-toolbar: 900;
 }
 
 #root-container {
   min-width: 255px;
+}
+
+.text-align-justify {
+  text-align: justify;
 }
