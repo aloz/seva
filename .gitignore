@@ -38,6 +38,10 @@ testem.log
 /typings
 /.firebase
 
+.vs/
+obj/
+*.user
+
 # System files
 .DS_Store
 Thumbs.db
